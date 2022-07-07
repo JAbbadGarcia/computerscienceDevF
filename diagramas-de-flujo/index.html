@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costo del boleto</title>
+    <script defer src="js/scripts.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body style="background-color: steelblue; width: 100vw; height: 100vh; padding-top: 50px;">
+    <div class="card" style="width:70%; margin: 0 auto; background-color: rgb(252, 252, 252);">
+        <div class="card-content">
+          <div class="field">
+                <label class="title">Ingresar cantidad de litros</label>
+                <div class="control mt-4">
+                    <input id="litros" class="input" type="number" placeholder="Ingresa cantidad de litros">
+                </div>
+            </div>
+            <label class="label">Tipo de gasolina</label>
+            <div class="select mb-5 is-justify-content-center" style="width: 100%;">
+                <select id="tipoGasolina" style="width: 100%;">
+                    <option>Magna</option>
+                    <option>Premium</option>
+                </select>
+            </div>
+        </div>
+        <footer class="card-footer">
+          <p class="card-footer-item">
+            <button id="calcular-boton" class="button is-size-5 is-success">Calcular precio</button>
+          </p>
+            <div id="total"></div>
+        </footer>
+      </div>
+      
+    
+</body>
+</html>
